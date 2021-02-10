@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Encuesta</title> 
+      <link rel="stylesheet" href="survey.css">
+    </head>
+    <body>
+        <h1 id="title">Encuesta</h1>
+        <p id="description">Esta es una encuesta sobre tu personaje favorito histórico</p>
+        <form id="survey-form" name="encuesta">
+            
+            <label for="name" id="name-label">Nombre:</label><br> 
+            <input type="name" id="name" name="name" placeholder="Escriba nombre" required>
+            
+            <label for="email" id="email-label">email:</label><br> 
+            <input type="email" id="email" name="email" placeholder="Escriba email" required>
+
+            <label for="number" id="number-label">Edad:</label><br> 
+            <input type="number" id="number" min="0" max="100" name="number" placeholder="Escriba numero">
+
+            
+            <p id="ocupacion">Ocupación:</p>
+            <select id="dropdown" name="role"  required>
+                <option disabled selected value>Indique su ocupación actual</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="empleado">Empleado</option>
+                <option value="aprendiz">aprendiz</option>
+                <option value="preferNo">Prefiero no decir</option>
+                <option value="otro">Otro</option>
+              </select>
+            <p id="boton radial">¿Cuanto te gusta nuestro sitio?</p>
+            <label>
+                <input
+                  name="user-recommend"
+                  value="Mucho"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />Mucho
+            </label>
+            <label>
+                <input
+                    name="user-recommend"
+                    value="no-seguro"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                   />No estoy seguro
+            </label>       
+            <label>
+                <input
+                    name="user-recommend"
+                    value="nada"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                   />nada
+            </label>       
+            <p id="Formulario">¿Cuales de ellos son personajes importantes para tí?</p>
+            <label
+            ><input
+              name="prefer"
+              value="Porfirio-Diaz"
+              type="checkbox"
+              class="input-checkbox"
+            />Porfirio Diaz</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Miguel-Hidalgo"
+              type="checkbox"
+              class="input-checkbox"
+            />Miguel Hidalgo</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Agustín-de-Iturbide"
+              type="checkbox"
+              class="input-checkbox"
+            />Agustín de Iturbide</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Jose"
+              type="checkbox"
+              class="input-checkbox"
+            />José María Morelos y Pavon</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Benito-Juarez"
+              type="checkbox"
+              class="input-checkbox"
+            />Benito Juarez</label
+          >
+          <p>¿Algún comentario o sugerencía?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Inserte su comentario"
+          ></textarea>
+
+          <button type="submit" id="submit" class="submit-button">
+            Aceptar
+          </button>
+        </form>
+
+    </body>
+</html>
